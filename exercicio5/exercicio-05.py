@@ -1,3 +1,6 @@
+# Receba os coeficientes A, B e C de uma equaçao do 2° grau (AX2+BX+C=0). 
+# Calcule e mostre as raizes reais (considerar que a equaçãoo possuem 2 raízes).
+
 import math
 print("{}EQUAÇÃO DE SEGUNDO GRAU{}".format('-'*20, '-'*20))
 

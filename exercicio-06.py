@@ -7,4 +7,3 @@ C = B
 B = A
 A = C
 print("Ao fazermos a inversão, A vale: {} e B vale {}".format(A,B))
-

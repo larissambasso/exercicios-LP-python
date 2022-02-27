@@ -12,4 +12,4 @@ elif n2>n1:
   print('A diferença do maior para o menor é de: ',resultado)
 
 else:
-  print('Os numeros sao iguais, nao existe diferença')
+  print('Os numeros sao iguais, nao existe diferença.')

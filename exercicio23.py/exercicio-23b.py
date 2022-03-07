@@ -6,7 +6,7 @@ if n%2==0 and n%3==0:
   print('este numero é divisivel por 2 e 3!')
 
 elif n%2==0 and n%3!=0:
-  print('este numero é divisivel por 2 mas nao é por 3!')
+  print('Este numero é divisivel apenas por 2!')
 
 elif n%2!=0 and n%3==0:
   print('este numero NÃO é divisivel por 2 mas é por 3!')

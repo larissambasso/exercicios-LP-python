@@ -1,5 +1,6 @@
 #Receba 2 números inteiros, verifique qual o maior entre eles. 
 #Calcule e mostre o resultado da somatória dos números ímpares entre esses valores.
+print("{}SOMA DOS IMPARES{}".format('-'*20, '-'*20))
 n1 = int(input("digite um numero: "))
 n2 = int(input("digite outro numero: "))
 s = 0

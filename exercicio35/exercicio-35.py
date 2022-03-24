@@ -2,14 +2,19 @@
 #Calcule e mostre o resultado da somatória dos números ímpares entre esses valores.
 n1 = int(input("digite um numero: "))
 n2 = int(input("digite outro numero: "))
+s = 0
 
 if n1>n2:
-  maior = n1
-  for numeros in range(maior, n2):
-    print("oi",numeros)
+  for numeros in range(n1-1, n2, -1): #o ultimo numero do parenteses esta indicando a contagem de forma decrescente.
+    if numeros%2!=0:
+      s = s+numeros
+  print("A soma de todos os numeros impares é: ",s)
 
 elif n2>n1:
-  maior = n2
-  print("deu certo")
+  for numeros in range(n2-1, n1, -1):
+    if numeros%2!=0:
+      s = s+numeros
+  print("A soma de todos os numeros impares é: ",s)
+
 else:
   print("Os numeros sao iguais, comece o programa novamente") 

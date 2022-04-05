@@ -8,5 +8,3 @@ print('O quadrados dos numeros entre 10 e 150 é:')
 for n in range(11, 150):
   print(n,'-',n*n)
 
-
-#tentar separar os numeros com string

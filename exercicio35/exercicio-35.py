@@ -19,3 +19,5 @@ elif n2>n1:
 
 else:
   print("Os numeros sao iguais, comece o programa novamente") 
+  
+  #arrumar para negativos

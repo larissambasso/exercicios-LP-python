@@ -13,3 +13,5 @@ while f <= n:
   n2 = soma
   f = f+1
 print('fim do programa')
+
+#tentar fazer sem os dois primeiros

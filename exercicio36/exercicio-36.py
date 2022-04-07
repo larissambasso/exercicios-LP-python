@@ -2,15 +2,22 @@
 print("{}FATORIAL DA SOMA DAS PARTES{}".format('-'*20, '-'*20))  
 
 n = int(input('Digite um numero: '))
+resultado = 1
 msg = 1
-print(msg, end=' ')
-resultado = 0
+print(msg, '+ ',end='')
 
 for c in range(1, n+1):
+  print('1/', end='')
+  print(c, end='')
 
-  if c>=1:
-    msg = '+ 1/' + str(c) + '! '
+  if c>1:
+    resultado = (resultado*c)
 
+  if c<n:
+    print(end='! + ')
   if c==n:
-    msg += ' = '
-  print(msg, end='')
+    print('! =', end='')
+
+  msg += 1/resultado 
+  
+print(msg)               

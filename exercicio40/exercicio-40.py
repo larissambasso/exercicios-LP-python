@@ -32,3 +32,5 @@ for c in range(n1, n2 + 1):
 #     print('Contudo,',n1, 'é um numero primo.' )
 #   else:
 #     print('E ',n1,'NÃO é um numero primo.')
+
+#CONTINUAR

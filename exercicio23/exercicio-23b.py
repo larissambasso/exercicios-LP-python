@@ -8,6 +8,7 @@ def divisivel(n):
 
   elif n%2!=0 and n%3==0:
     return('Este número é divisível apenas 3!')
+    
 
   else:
     return('este numero nao é divisivel nem por 2 nem 3.')

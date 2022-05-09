@@ -1,20 +1,16 @@
 #Receba um número inteiro. Calcule e mostre o seu fatorial.
-'''
-from time import sleep
+def inteiro(n):
+  f = 1
+  for c in range(n,0,-1):
+    if c!=1:
+      print(c, end='x')
+    else:
+      print(c, end='=')
+    f*=(c)
+  print(f, end='')
 
-print("{}FATORIAL NUMERO INTEIRO{}".format('-'*20, '-'*20))
-n = int(input('Digite um numero: '))
-contador = n
 
-while contador>0:
-  sleep(1)
-  contador -= 1
-  print('asfassa',contador)
-'''
-  #CONTINUAR
 print("{}FATORIAL NUMERO INTEIRO{}".format('-'*20, '-'*20))  
-s = 0
-n = int(input('digite um numero: '))
-for c in range(0, n):
-  s = (s+c)*c*s
-  print(s)
+
+n = int(input('Digite um numero: '))
+inteiro(n)

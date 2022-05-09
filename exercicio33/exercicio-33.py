@@ -22,5 +22,4 @@ def partes(n):
 print("{}SOMA DAS PARTES{}".format('-'*20, '-'*20))  
 n = int(input('digite um numero: '))
 
-  
 partes(n)

@@ -1,6 +1,6 @@
 #Receba um número. Calcule e mostre os resultados da tabuada desse número.
 def calculoTaboada(n):
-
+  
   resultados = [0]*10;
 
 

@@ -1,5 +1,5 @@
 #Receba um número. Calcule e mostre a série 1 + 1/2 + 1/3 + ... + 1/N.
-def partes(n):
+def calcularPartes(n):
   resultado = 0
       
   msg = ''
@@ -17,9 +17,9 @@ def partes(n):
     if contador==n:
       msg += ' = '+ str('{:.2f}'.format(resultado))
 
-  print(msg)
+  return msg;
 
 print("{}SOMA DAS PARTES{}".format('-'*20, '-'*20))  
 n = int(input('digite um numero: '))
 
-partes(n)
+print(calcularPartes(n))

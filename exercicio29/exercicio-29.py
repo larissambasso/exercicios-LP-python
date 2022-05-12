@@ -16,6 +16,7 @@ def renda(investimento):
   else:
     print('Opção nao encontrada. Tente novamente.')
 
+
 print("{}INVESTIMENTOS{}".format('-'*20, '-'*20))
 print('''[1] poupança[2] renda fixa''')
 investimento = int(input('selecione o tipo de investimento que deseja fazer: '))

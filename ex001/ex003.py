@@ -3,6 +3,8 @@
 # P. ex: # VT1|	1|	2|	3|	
 #          VT2|	4|	5|	6|	
 #          VT3|	1|	2|	3|	4|	5|	6
+print("{}CONCATENANDO DOIS VETORES{}".format('-'*20, '-'*20))
+
 
 lista1 = []*3
 lista2 = []*3

@@ -18,8 +18,7 @@ for c in range(1,6):
         menor = n
     resultadoMedia = soma/c
 
-        
-print(menor)
-print(maior)
-print(resultadoMedia)
-print(lista)
+print("Você digitou: ",lista) 
+print("O menor numero da lista é: ", menor)
+print("O maior numero da lista é: ", maior)
+print("A media destes números é: ", resultadoMedia)

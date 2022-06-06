@@ -24,3 +24,13 @@ print(f'A quantidade de valores acima da média nesta lista é de: {contador} n�
 
 print(notas)
 print("A media destes numeros é de: ",resultado)
+
+
+
+# lista = [1, 2, 10, 5, 20]
+# valor = 10
+# pos = -1
+# for i in range(len(lista)-1,-1,-1):
+#  if lista[i] == valor:
+#   pos = i
+# print(pos)

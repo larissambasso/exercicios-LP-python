@@ -12,3 +12,6 @@ for c in range(1,11):
 print("A lista digitada foi: ", lista)
 print("Os numeros impares digitados foram: ", impar)
 print("Os numeros pares digitados foram: ", par)
+
+# if lista[1] == lista[2]:
+#   print(lista[1])

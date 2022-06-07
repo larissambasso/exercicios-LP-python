@@ -23,8 +23,5 @@ adivinhacao = minhaSenha()
 while senhaSecreta!=adivinhacao:
     print("SENHA INCORRETA. Tente novamente!",adivinhacao)
     adivinhacao = minhaSenha()
-print(adivinhacao,"\033[1;32m correta")
 
-# \033[1;33m
-# if senhaSecreta == adivinhação:
-#     print(adivinhação,"\033[1;32m correta")
+print("\033[1;32m CORRETA",adivinhacao)

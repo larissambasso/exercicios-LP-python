@@ -9,8 +9,6 @@ def minhaSenha():
     return(adivinhacao)
 
 
-
-
 senhaSecreta = []
 
 for c in range(1,6):
@@ -25,13 +23,18 @@ for d in range(0, len(numeros)):
         if senhaSecreta[e] == numeros[d]:
             if d==e:
                 print("\033[1;32m",numeros[d])
-            else:
+            elif d!=e:
                 print("\033[1;33m",numeros[d])
-        else:
-                print("\033[1;31m",numeros[d]) #ajustar
+
+for f in range(0, len(senhaSecreta)):
+    if numeros is not senhaSecreta[f]:
+        print("\033[1;31m",numeros[f]) #ajustar
 
 while senhaSecreta!=numeros:
     print("Tente novamente!",numeros)
     numeros = minhaSenha()
 
 print("\033[1;32m CORRETA",numeros)
+
+
+#TERMINAR

@@ -1,19 +1,28 @@
-from turtle import st
+import random
+
+v1 = []
+n = int(input("Digite um numero: "))
+m = int(input("Digite um numero: "))
+v1 = [n,m]
 
 
-print("{}LISTA PAR E LISTA IMPAR{}".format('-'*20, '-'*20))
+v2 = [random.randint(1,3)]
 
 
-teste = [0]*2
-teste[0] = "larissa"
-teste[1] = 25
+print(v1)
+print(v2)
 
-teste1 = [0]*2
-teste1[0] = "debora"
-teste1[1] = 30
+for c in range(0, len(v1)):
+    if v2[0] == v1[c]:
+      print(c)
 
 
-galera = [0]*2
-galera = teste, teste1
 
-print(galera)
+
+# trocando variaveis
+# maior = 0
+
+# if v1[0]>v1[1]:
+#     maior = v1[0]
+#     v1[0] = v1[1]
+#     v1[1] = maior

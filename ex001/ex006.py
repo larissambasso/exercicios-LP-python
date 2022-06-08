@@ -12,3 +12,5 @@ for c in range(0,5):
     numeros[0] = maior
 
 print(numeros)
+
+#TERMINAR

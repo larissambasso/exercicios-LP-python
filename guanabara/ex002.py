@@ -1,6 +1,6 @@
 print("{}VALORES ÚNICOS{}".format('-'*20, '-'*20))
 
-numeros=[];
+numeros=[]
 
 while True:
     n = int(input("Digite um valor: "))

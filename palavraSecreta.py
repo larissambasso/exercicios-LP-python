@@ -3,9 +3,14 @@ import random
 
 def minhaSenha():
     adivinhacao = [0]*5
-    for d in range(0,5):
-        adv = int(input("Digite um numero: "))
-        adivinhacao[d] = adv
+    indice = 0
+    while indice<5:
+        adv = int(input("Digite um numero de 0 a 9: "))
+        if adv<=15:
+            adivinhacao[indice] = adv
+            indice+=1
+        else:
+            print("Os numeros tem que ser ate 9!")
     return(adivinhacao)
 
 
@@ -33,23 +38,25 @@ def tentativa(numeros, senhaSecreta):
         encontrou = False;
 
 
-senhaSecreta = []
-
-for c in range(1,6):
-    s = random.randint(1,9)
-    senhaSecreta.append(s)
-
-# print(senhaSecreta)
+senhaSecreta = [0]*5
+indice2 = 0
+while indice2<5:
+    s = random.randint(0,9)
+    if s not in senhaSecreta:
+        senhaSecreta[indice2] = s
+        indice2+=1
+print(senhaSecreta)
 numeros = minhaSenha()
 
+quantTentativa = 1
 
 while senhaSecreta!=numeros:
     tentativa(numeros, senhaSecreta)
     print("\033[1;97m Tente novamente!",numeros)
     numeros = minhaSenha()
+    quantTentativa += 1
 
 print("\033[1;32m CORRETA",numeros)
+print(f'-------------- Você acertou em {quantTentativa} tentativas. --------------')
 
-
-#TERMINAR
 

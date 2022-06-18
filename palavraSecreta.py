@@ -9,32 +9,47 @@ def minhaSenha():
     return(adivinhacao)
 
 
+def tentativa(numeros, senhaSecreta):
+    
+    encontrou = False;
+    numero = '';
+
+    
+    for d in range(0, len(numeros)):
+        for e in range(0, len(senhaSecreta)):
+            if senhaSecreta[e] == numeros[d]:
+                encontrou = True;
+                if d==e:
+                    numero = "\033[1;32m" + str(numeros[d])
+                    break;
+                elif d!=e:
+                    numero = "\033[1;33m" + str(numeros[d])
+        
+        if not encontrou:
+            numero = "\033[1;31m" + str(numeros[d])
+        
+        print(numero);
+
+        encontrou = False;
+
+
 senhaSecreta = []
 
 for c in range(1,6):
     s = random.randint(1,9)
     senhaSecreta.append(s)
-    
-print(senhaSecreta)
+
+# print(senhaSecreta)
 numeros = minhaSenha()
 
-for d in range(0, len(numeros)):
-    for e in range(0, len(senhaSecreta)):
-        if senhaSecreta[e] == numeros[d]:
-            if d==e:
-                print("\033[1;32m",numeros[d])
-            elif d!=e:
-                print("\033[1;33m",numeros[d])
-
-for f in range(0, len(senhaSecreta)):
-    if numeros is not senhaSecreta[f]:
-        print("\033[1;31m",numeros[f]) #ajustar
 
 while senhaSecreta!=numeros:
-    print("Tente novamente!",numeros)
+    tentativa(numeros, senhaSecreta)
+    print("\033[1;97m Tente novamente!",numeros)
     numeros = minhaSenha()
 
 print("\033[1;32m CORRETA",numeros)
 
 
 #TERMINAR
+

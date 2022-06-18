@@ -5,14 +5,16 @@ import random
 print("{}LOTOFÁCIL{}".format('-'*20, '-'*20))
 
 minhaAposta = []
-for contador in range(1,16):
-  meusNumeros = int(input("Digite um numero:"))
-  if meusNumeros not in minhaAposta:
+while len(minhaAposta)<15:
+  meusNumeros = int(input("Digite um numero de 1 a 25:"))
+  if meusNumeros not in minhaAposta and meusNumeros<=25:
     minhaAposta.append(meusNumeros)
+
+  elif meusNumeros>25 or meusNumeros==0:
+    print("Este numero não é permitido. Digite outro!")
+
   else:
     print("Este numero já foi digitado!")
-    meusNumeros = int(input("Digite outro numero: "))
-    minhaAposta.append(meusNumeros)
 
 print("Os numeros de sua aposta foram:", minhaAposta)
 

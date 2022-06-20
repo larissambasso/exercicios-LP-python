@@ -24,6 +24,6 @@ for d in notas:
 print("A media destes numeros é de: ",resultado)
 
 semColchete = str(posicaoAbaixo)[1:-1]#faz printar sem colchete
-print("As posiçõs dos numeros abaixo da média são:" + semColchete)#faz printar sem colchete
+print("As posiçõs dos numeros abaixo da média são: " + semColchete)#faz printar sem colchete
 
 print(f'A quantidade de valores acima da média nesta lista é de: {contador} números!')

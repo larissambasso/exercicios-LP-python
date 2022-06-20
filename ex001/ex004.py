@@ -4,11 +4,11 @@
 # As posições dos valores abaixo da média do grupo.
 
 print("{}MEDIA DE NOTAS{}".format('-'*20, '-'*20))
-
+posicaoAbaixo = []
 notas = []*5
 soma = 0
 contador = 0
-for c in range(1,31):
+for c in range(1,5):
   n = int(input("Digite um numero: "))
   notas.append(n)
   soma += n
@@ -19,18 +19,11 @@ for d in notas:
     contador += 1
   elif d<resultado:
     posicao = notas.index(d)
-    print(f'A posiçao dos numeros abaixo da média é: {posicao}!')
-print(f'A quantidade de valores acima da média nesta lista é de: {contador} números!')
+    posicaoAbaixo.append(posicao)
 
-print(notas)
 print("A media destes numeros é de: ",resultado)
 
+semColchete = str(posicaoAbaixo)[1:-1]#faz printar sem colchete
+print("As posiçõs dos numeros abaixo da média são:" + semColchete)#faz printar sem colchete
 
-
-# lista = [1, 2, 10, 5, 20]
-# valor = 10
-# pos = -1
-# for i in range(len(lista)-1,-1,-1):
-#  if lista[i] == valor:
-#   pos = i
-# print(pos)
+print(f'A quantidade de valores acima da média nesta lista é de: {contador} números!')

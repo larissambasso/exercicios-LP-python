@@ -6,7 +6,7 @@ def minhaSenha():
     indice = 0
     while indice<5:
         adv = int(input("Digite um numero de 0 a 9: "))
-        if adv<=15:
+        if adv<=9:
             adivinhacao[indice] = adv
             indice+=1
         else:
@@ -45,7 +45,7 @@ while indice2<5:
     if s not in senhaSecreta:
         senhaSecreta[indice2] = s
         indice2+=1
-print(senhaSecreta)
+
 numeros = minhaSenha()
 
 quantTentativa = 1

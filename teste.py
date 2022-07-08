@@ -10,6 +10,7 @@ vendas = {
 }
 
 
+
 @encontrando.get("/")
 def home():
   return {"Vendas":len(vendas)}
